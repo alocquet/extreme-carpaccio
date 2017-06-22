@@ -33,7 +33,7 @@ export class Service {
                 return total * 0.97;
             } else {
                 return total;
-            }
+            } 
         } else if (reduction === 'HALF PRICE') {
             return total / 2;
         }
