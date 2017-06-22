@@ -8,7 +8,7 @@ class TaxCalculator {
         var array = {
             'DE': 1.2,
             'UK': 1.21,
-            'FR': 1.2,
+            'FR': 1.23,
             'IT': 1.25,
             'ES': 1.19,
             'PL': 1.21,
