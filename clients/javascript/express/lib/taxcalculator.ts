@@ -1,5 +1,16 @@
 export class TaxCalculator {
+   /**
+    * Return total if the country isn't specified or if country doesn't exists in
+    * the rules.
+    *
+    * @param total the total to calculate
+    * @param countryCode 
+    */
    calculate(total: number, countryCode : string) : number {
+      if (undefined == countryCode && 
+         undefined === this.getTaxes()[countryCode]) {
+         return total;
+      }
       return total * this.getTaxes()[countryCode];
    }
 
