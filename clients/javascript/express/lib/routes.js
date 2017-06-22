@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const model_1 = require("./model");
+const service_1 = require("./service");
+let service = new service_1.Service();
 exports.order = function order(req, res, next) {
-    // TODO implement from here
-    console.log('prices - ' + req.body.prices);
-    res.json(new model_1.Response(0));
+    let query = req.body;
+    res.json(service.computeTotal(query));
 };
 exports.feedback = function feedback(req, res, next) {
     console.info("FEEDBACK:", req.body.type, req.body.content);
