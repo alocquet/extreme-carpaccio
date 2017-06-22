@@ -36,6 +36,8 @@ taxCalculator = new TaxCalculator();
             } 
         } else if (reduction === 'HALF PRICE') {
             return total / 2;
+        } else if (reduction === 'PAY THE PRICE') {
+            return total;
         }
     }
 }
