@@ -3,7 +3,7 @@ import {Request} from 'express';
 
 exports.order = function order(req: Request, res, next) {
   // TODO implement from here
-  
+  console.log('prices - ' + (<Query>req.body).prices;
   res.json({});
 }
 
