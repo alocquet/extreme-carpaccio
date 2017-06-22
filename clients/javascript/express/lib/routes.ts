@@ -4,9 +4,7 @@ import {Request} from 'express';
 exports.order = function order(req: Request, res, next) {
   // TODO implement from here
   console.log('prices - ' + (<Query>req.body).prices;
-  let resp = new Response();
-  resp.total = 0;
-  res.json(resp);
+  res.json(new Response(0));
 }
 
 exports.feedback = function feedback(req, res, next) {
