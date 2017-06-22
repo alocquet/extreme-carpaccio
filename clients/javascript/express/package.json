@@ -4,16 +4,20 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "start" : "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.0.36",
     "chai": "^3.4.1",
     "mocha": "^2.3.4",
+    "nodemon": "^1.11.0",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0",
-    "supertest": "^1.1.0"
+    "supertest": "^1.1.0",
+    "typescript": "^2.3.4"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
