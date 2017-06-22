@@ -1,10 +1,12 @@
-import {Query} from './model';
+import {Query, Response} from './model';
 import {Request} from 'express';
 
 exports.order = function order(req: Request, res, next) {
   // TODO implement from here
   console.log('prices - ' + (<Query>req.body).prices;
-  res.json({});
+  let resp = new Response();
+  resp.total = 0;
+  res.json(resp);
 }
 
 exports.feedback = function feedback(req, res, next) {
