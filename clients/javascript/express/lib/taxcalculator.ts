@@ -1,6 +1,6 @@
 export class TaxCalculator {
    calculate(total: number, countryCode : string) : number {
-      return total * this.getTaxes()[countryCode];
+      return total * this.getTaxes()[countryCode.toUpperCase()];
    }
 
    private getTaxes() : {[index: string] : number} {
