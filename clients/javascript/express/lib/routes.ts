@@ -7,7 +7,11 @@ let service = new Service();
 
 exports.order = function order(req: Request, res, next) {
   let query = <Query>req.body;
-  console.log(query);
+  //console.log(query);
+  if(!(<string>req.body).endsWith('}')){
+    res.status(400);
+    return;
+  }
   
   process.order(query, (err, resp) => res.json(resp));
 }
